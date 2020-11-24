@@ -38,10 +38,12 @@ function App() {
 					return (
 						<>
 							<Text
+								aria-label="first"
 								field="first"
 								onChange={(e) => handleChange(formState)}
 							/>
 							<Select
+								aria-label="operation"
 								field="op"
 								defaultValue="+"
 								onChange={(e) => handleChange(formState)}
@@ -52,6 +54,7 @@ function App() {
 								<option value="/">/</option>
 							</Select>
 							<Text
+								aria-label="second"
 								field="second"
 								onChange={(e) => handleChange(formState)}
 							/>
